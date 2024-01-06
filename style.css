@@ -34,7 +34,7 @@ html,body{
     position: relative;
     height: 50px;
     width: 100%;
-    margin: 20px;
+    margin-top: 20px;
 }
 .wrapper form .field input{
     height: 100%;
@@ -57,6 +57,7 @@ html,body{
     color: #999;
     transform: translateY(-50%);
     pointer-events: none;
+    transition: all 0.3s ease;
 }
 .wrapper form .field input:focus ~ label,.wrapper form .field input:valid ~ label{
     top: 0%;
@@ -64,4 +65,33 @@ html,body{
     font-size: 16px;
     background: #fff;
     transform: translateY(-50%);
+}
+.wrapper form .field input[type="submit"]{
+    color: #fff;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding-left: 0px; 
+    cursor: pointer;
+    transition: all0.3s ease;
+}
+.wrapper form .field input[type="submit"]:active{
+    transform: scale(0.95);
+}
+.wrapper form .pass-link{
+    color: #4158d0;
+    margin: 8px 0 0 10px;
+}
+.wrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    color: #262626;
+}
+.wrapper form .pass-link a, .wrapper form .signup-link a{
+    color: #4158d0;
+    text-decoration: none;
+}
+.wrapper form .pass-link a, .wrapper form .signup-link a:hover{
+    text-decoration: underline;
 }
